@@ -5,7 +5,7 @@ $(document).ready(function () {
     let records = []
     let update = false
     let viewedRecord = {}
-    const url = "https://library-management-sytem.herokuapp.com"
+    const url = "http://localhost:3000"
 
     fetch(`${url}/getRecords`)
         .then(res => res.json())

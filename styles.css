@@ -1,0 +1,231 @@
+body {  
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+ }
+
+ h1 {
+     margin: 10px 0;
+ }
+
+.wrapper { 
+    padding: 30px; 
+    min-width: 1000px;
+    display: inline-block;
+}
+
+.modalOverlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 99999;
+}
+
+.formWrapper {
+     background-color: white; 
+     width: 750px;
+     margin: auto;
+     margin-top: 7%;
+     display: none;
+     height: 500px;
+}
+.selectedBooks {
+    height: 100%;
+    overflow: auto;
+    height: 400px;
+}
+#enterBorrower {
+    display: none;
+}
+
+.bookDescription {
+    display: inline-block;
+    width: 75%;
+    text-align: left;
+    padding: 5px 10px;
+}
+
+.book {
+    background-color: lightgray;
+    height: 80px;
+    margin: 5px 0;
+    display: flex;
+    width: 100%;
+    /* display: inline-block; */
+}
+
+.searchBar{
+    width: 200px;
+}
+.bookCover {
+    width: 25%;
+    height: 100%;
+    background-color: gray;
+    display: inline-block;
+}
+.innerForm {
+    width: 50%;
+    padding-left: 15px;
+    text-align: left;
+}
+#booktitle {
+    margin:0;
+    font-size: 18px;
+}
+
+.bookDescription p {
+    margin: 0;
+    font-size: 14px;
+    color: rgb(54, 54, 54);
+}
+
+.modalTitle {
+    padding: 15px;
+    background-color: rgb(56, 155, 253);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.modalContent {
+    padding: 15px; 
+    display: flex;
+}
+
+input {
+    display: block;
+    padding: 9px 10px;
+    width: 100%;
+    margin-top: 2px !important;
+    box-sizing: border-box;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+.listOfBooks {
+    display: flex;
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    height: 330px;
+    padding: 15px 0;
+    overflow: auto;
+}
+.bookBox {
+    width: 200px;
+    margin: 15px;
+    background-color: lightgray;
+    position: relative;
+}
+
+.selected {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 162, 255, 0.5);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    /* display: none; */
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+
+.bImage {
+    height: 250px;
+    background-color: rgb(58, 57, 57);
+    width: 100%;
+}
+
+.bTitle {
+    font-weight: bold;
+    margin: 3px;
+    font-size: 16px;
+}
+
+.bAuthor {
+    margin: 0;
+    font-size: 13px;
+}
+.buttonCont {
+    text-align: right;
+    padding: 8px 0;
+}
+
+input:focus {
+    outline: 1px solid dodgerblue;
+}
+
+.record {
+    width:100%; 
+    border-collapse: collapse; 
+}
+
+.record th {
+    background-color: lightgray;
+}
+
+.record th, td {
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.record tr {
+    border-bottom: 1px solid lightgray;
+}
+
+.record tr:hover {
+    background-color: rgb(240, 240, 240) !important;
+    color:rgb(13, 37, 155) !important;
+}
+
+/* .record tr:nth-child(odd) { 
+    background-color: #f2f2f2;
+ } */
+
+ button {
+     padding: 10px 20px;
+     border: none;
+     background-color: rgb(37, 81, 224);
+     color: white; 
+     border-radius: 5px;
+     transition: .3s;
+ }
+
+ .topContainer {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .actionsColumn {
+     width: 150px;
+     text-align: center;
+ }
+
+ .actionsColumn button {
+     padding: 5px;
+     opacity: .4;
+ }
+
+ button:hover {
+     box-shadow: 0 3px 5px rgb(44, 44, 44);
+ }
+
+ .blueBg {
+     background-color: rgb(8, 115, 221);
+ }
+
+ .redBg {
+     background-color: rgb(230, 27, 37);
+ }
+
+ .greenBg {
+     background-color: rgb(2, 139, 2);
+ }
+

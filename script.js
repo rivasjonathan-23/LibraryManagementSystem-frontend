@@ -5,7 +5,7 @@ $(document).ready(function () {
     let records = []
     let update = false
     let viewedRecord = {}
-    const url = "http://localhost:3000"
+    let url = "http://localhost:3000"
 
     fetch(`${url}/getRecords`)
         .then(res => res.json())
@@ -80,7 +80,6 @@ $(document).ready(function () {
             values[field.name] = field.value;
         });
 
-        let url = `${url}/createRecord`
         if (update) url = `${url}/updateRecord/${viewedRecord._id}`
 
         fetch(url,
